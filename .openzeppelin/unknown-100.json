@@ -1,0 +1,391 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x1b7Fc6Ce1cc53Fb84Cce5d87c8C5a28d8898A89B",
+    "txHash": "0x577f2d207870147e0b8eb9dff340a127630b1e899e288b1aaac54241833f5414"
+  },
+  "proxies": [
+    {
+      "address": "0x3613840A8bbA65364724F37F4D4992F0CfC08c8e",
+      "txHash": "0x9eb201cdfdb65103c0ea10e1226270b415e8a399b9645777d6c532eade9f7bda",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x43654F6581290AF617ed86ff175866dEE181A199",
+      "txHash": "0x824aed1ab72ca43d5b0e46b473043a5e6a4929e546f0a28ec3231c20853887bd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x7edf4837B20D98f515A8de3A0F90089B83eaE4a3",
+      "txHash": "0xea66586c4f77b51a6ba3be316bb970d11b531a6ad9f6990f6dede3e11136f6b0",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "7c12f3e51f4e18a4618152456b11c66a11d670996508910e8de3efb544ddc892": {
+      "address": "0xd308981aA4EaC764bcF97d594260928290426e2e",
+      "txHash": "0xf872475b40c781d526450b6bd19b235b1e423f690a3974b113573d15bf437ae8",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "topics",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_array(t_struct(TrustTopic)4_storage)dyn_storage",
+            "contract": "ReputationGraph",
+            "src": "contracts/ReputationGraph.sol:31"
+          },
+          {
+            "label": "scores",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint256,t_struct(Score)15_storage)))",
+            "contract": "ReputationGraph",
+            "src": "contracts/ReputationGraph.sol:34"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(TrustTopic)4_storage)dyn_storage": {
+            "label": "struct ReputationGraph.TrustTopic[]",
+            "numberOfBytes": "32"
+          },
+          "t_int8": {
+            "label": "int8",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint256,t_struct(Score)15_storage)))": {
+            "label": "mapping(address => mapping(address => mapping(uint256 => struct ReputationGraph.Score)))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Score)15_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct ReputationGraph.Score))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Score)15_storage)": {
+            "label": "mapping(uint256 => struct ReputationGraph.Score)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Score)15_storage": {
+            "label": "struct ReputationGraph.Score",
+            "members": [
+              {
+                "label": "from",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "to",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "topicId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "score",
+                "type": "t_int8",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "confidence",
+                "type": "t_uint8",
+                "offset": 1,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(TrustTopic)4_storage": {
+            "label": "struct ReputationGraph.TrustTopic",
+            "members": [
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "2378a2a4bcde6742d67fcfe46ebacc2652871fd5462713d925edd787d221fef4": {
+      "address": "0x483db327bA7397F338418ba1FFa4098204D8269D",
+      "txHash": "0x4de5520a581cb7e7408b9a2e5992218d119bc9cdf357c38a8b6c73a6f53d9d19",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "topics",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_array(t_struct(TrustTopic)10_storage)dyn_storage",
+            "contract": "ReputationGraph",
+            "src": "contracts/ReputationGraph.sol:34"
+          },
+          {
+            "label": "scores",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_struct(Score)21_storage)dyn_storage",
+            "contract": "ReputationGraph",
+            "src": "contracts/ReputationGraph.sol:37"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Score)21_storage)dyn_storage": {
+            "label": "struct ReputationGraph.Score[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(TrustTopic)10_storage)dyn_storage": {
+            "label": "struct ReputationGraph.TrustTopic[]",
+            "numberOfBytes": "32"
+          },
+          "t_int8": {
+            "label": "int8",
+            "numberOfBytes": "1"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Score)21_storage": {
+            "label": "struct ReputationGraph.Score",
+            "members": [
+              {
+                "label": "from",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "to",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "topicId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "score",
+                "type": "t_int8",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "confidence",
+                "type": "t_uint8",
+                "offset": 1,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(TrustTopic)10_storage": {
+            "label": "struct ReputationGraph.TrustTopic",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "author",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "06542cc806fd70bd9b239ccba789600abd24942a44c7f924e65be433e5aa6048": {
+      "address": "0x4e84901f7B025e7b79D121a1E01F2d2ABA7f4798",
+      "txHash": "0x658b1dc48aed8fff183c374ddcc84316c3e9c3c5026466b6e032170ed7c2fae9",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "nonce",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "ReputationGraph",
+            "src": "contracts/ReputationGraph.sol:52"
+          },
+          {
+            "label": "topics",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_struct(TrustTopic)10_storage)dyn_storage",
+            "contract": "ReputationGraph",
+            "src": "contracts/ReputationGraph.sol:54"
+          },
+          {
+            "label": "scores",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_array(t_struct(Score)39_storage)dyn_storage",
+            "contract": "ReputationGraph",
+            "src": "contracts/ReputationGraph.sol:57"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Score)39_storage)dyn_storage": {
+            "label": "struct ReputationGraph.Score[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(TrustTopic)10_storage)dyn_storage": {
+            "label": "struct ReputationGraph.TrustTopic[]",
+            "numberOfBytes": "32"
+          },
+          "t_int8": {
+            "label": "int8",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Score)39_storage": {
+            "label": "struct ReputationGraph.Score",
+            "members": [
+              {
+                "label": "from",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "to",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "topicId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "score",
+                "type": "t_int8",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "confidence",
+                "type": "t_uint8",
+                "offset": 1,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(TrustTopic)10_storage": {
+            "label": "struct ReputationGraph.TrustTopic",
+            "members": [
+              {
+                "label": "id",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "title",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "description",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "author",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
